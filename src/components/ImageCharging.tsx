@@ -39,10 +39,7 @@ const ImageCharging = ({
         style={StyleSheet.absoluteFill}
       />
       <FastImage
-        onError={() => {
-          console.log('error');
-          setError(true);
-        }}
+        onError={() => setError(true)}
         {...rest}
         style={imageOverlay}
       />
